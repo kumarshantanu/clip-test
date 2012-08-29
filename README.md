@@ -12,7 +12,9 @@ You can also use this library to write JVM-specific and CLJS-specific tests.
 For ClojureScript testing this library should be used in conjunction with
 [lein-cljsbuild](https://github.com/emezeske/lein-cljsbuild).
 
-Leiningen dependency: `[clip-test "0.1.0-SNAPSHOT"]` (not on Clojars yet)
+On Clojars: On Clojars: https://clojars.org/clip-test
+
+Leiningen dependency: `[clip-test "0.1.0"]`
 
 Supported Clojure versions: 1.2, 1.3, 1.4, 1.5
 
