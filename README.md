@@ -14,11 +14,11 @@ For ClojureScript testing this library should be used in conjunction with
 
 On Clojars: On Clojars: https://clojars.org/clip-test
 
-Leiningen dependency: `[clip-test "0.1.0"]`
+Leiningen dependency: `[clip-test "0.2.0"]`
 
 Supported Clojure versions: 1.2, 1.3, 1.4, 1.5
 
-Tested with lein-cljsbuild version: 0.2.6
+Tested with lein-cljsbuild version: 0.2.8
 
 ### Notes:
 
@@ -33,6 +33,8 @@ Tested with lein-cljsbuild version: 0.2.6
 * You need to have PhantomJS (`run-tests.js`) and/or
   Firefox+Firebug (`run-tests.html`) or any browser supporting JavaScript console
   to run the tests in CLJS.
+* The namespaces `clip-test.testutil` and `clip-test.testutil-cljs` have common
+  functions that provide similar functionality in Clojure and ClojureScript.
 
 ### Examples
 
