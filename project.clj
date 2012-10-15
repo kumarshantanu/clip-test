@@ -1,11 +1,11 @@
-(defproject clip-test "0.1.0"
+(defproject clip-test "0.2.0"
   :description "Subset of `clojure.test` for Clojure and ClojureScript"
   :url "https://github.com/kumarshantanu/clip-test"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   ;; :dependencies [[org.clojure/clojure "1.4.0"]]
   :warn-on-reflection true
-  :plugins [[lein-cljsbuild "0.2.6"]]
+  :plugins [[lein-cljsbuild "0.2.8"]]
   :profiles {:jst {:source-paths ["src" "test"]
                    ;; Enable the lein hooks for: clean, compile, test, and jar
                    ;; :hooks [leiningen.cljsbuild]
@@ -23,6 +23,6 @@
              :1.2 {:dependencies [[org.clojure/clojure "1.2.1"]]}
              :1.3 {:dependencies [[org.clojure/clojure "1.3.0"]]}
              :1.4 {:dependencies [[org.clojure/clojure "1.4.0"]]}
-             :1.5 {:dependencies [[org.clojure/clojure "1.5.0-alpha4"]]}}
+             :1.5 {:dependencies [[org.clojure/clojure "1.5.0-alpha6"]]}}
   :aliases {"all" ["with-profile" "1.2:1.3:1.4:1.5"]
             "dev" ["with-profile" "1.4,jst"]})
