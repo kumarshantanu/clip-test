@@ -1,7 +1,7 @@
 (ns clip-test.core-test
   (:use [clip-test.testutil;*CLJSBUILD-REMOVE*;-cljs
          :only [;*CLJSBUILD-REMOVE*;RuntimeException
-                re-quote throw-msg]])
+                re-quote throw-msg millis-now sleep]])
   (:use;*CLJSBUILD-REMOVE*;-macros
     [clip-test.core;*CLJSBUILD-REMOVE*;-cljs
      :only [deftest testing is
@@ -54,8 +54,19 @@
     (is (throw-msg "Raising error") "throw-msg")))
 
 
+(deftest test-testutil
+  (testing "millis-now"
+    (is (pos? (millis-now)) "millis-now"))
+  (testing "sleep"
+    (let [start (millis-now)
+        _     (sleep 100)
+        stop  (millis-now)]
+    (is (>= (- stop start) 100) "sleep"))))
+
+
 (defn test-ns-hook
   []
   (test-success)
   (test-fail)
-  (test-error))
+  (test-error)
+  (test-testutil))

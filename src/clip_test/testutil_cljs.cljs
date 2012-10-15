@@ -39,6 +39,17 @@
   (.-message err))
 
 
+(defn millis-now
+  []
+  (.getTime (js/Date.)))
+
+
+(defn sleep
+  [millis]
+  (let [start (millis-now)]
+    (while (< (- (millis-now) start) millis))))
+
+
 (defn init!
   []
   (set! internal/try-catch try-catch)

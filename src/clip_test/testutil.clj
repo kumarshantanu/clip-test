@@ -28,6 +28,18 @@
   (.getMessage ^Throwable err))
 
 
+(defn millis-now
+  []
+  (System/currentTimeMillis))
+
+
+(defn sleep
+  [millis] {:pre [(number? millis)]}
+  (try (Thread/sleep millis)
+    (catch InterruptedException e
+      (.interrupt ^Thread (Thread/currentThread)))))
+
+
 (defn init!
   []
   (alter-var-root #'internal/try-catch (constantly try-catch))
