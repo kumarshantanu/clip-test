@@ -59,4 +59,7 @@
                        (when-not value#
                          (fail ~msg '~form value#)))
                     (fn [err#]
-                      (error ~msg '~form err#)))))))
+                      (error ~msg '~form err#)
+                      (print (or (.-stack err#)
+                                 (.-stacktrace err#)
+                                 (.-stackTrace err#)))))))))
