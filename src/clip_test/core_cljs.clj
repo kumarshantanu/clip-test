@@ -12,7 +12,7 @@
      []
      (binding [*test-name* ~(str the-name)]
        (++ test-count)
-       (print (str "[Running test] " ~(str the-name)))
+       (print (str "[Running test] " ~(str (ns-name *ns*)) "/" ~(str the-name)))
        ~@body)))
 
 
