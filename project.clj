@@ -1,4 +1,4 @@
-(defproject clip-test "0.2.1"
+(defproject clip-test "0.2.2"
   :description "Subset of `clojure.test` for Clojure and ClojureScript"
   :url "https://github.com/kumarshantanu/clip-test"
   :license {:name "Eclipse Public License"

@@ -1,8 +1,12 @@
 # CHANGES and TODO
 
+## 2012-October-21 / 0.2.2
+
+* Print JS stack trace on CLJS test errors (PhantomJS 1.6+ or modern browser)
+
 ## 2012-October-21 / 0.2.1
 
-* Display namespace when running tests
+* Print namespace when running tests
 
 ## 2012-October-16 / 0.2.0
 
