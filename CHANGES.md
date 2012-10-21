@@ -1,5 +1,9 @@
 # CHANGES and TODO
 
+## 2012-October-21 / 0.2.1
+
+* Display namespace when running tests
+
 ## 2012-October-16 / 0.2.0
 
 * Utility functions: `millis-now` `sleep`
