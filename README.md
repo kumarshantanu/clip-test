@@ -14,11 +14,11 @@ For ClojureScript testing this library should be used in conjunction with
 
 On Clojars: On Clojars: https://clojars.org/clip-test
 
-Leiningen dependency: `[clip-test "0.2.0"]`
+Leiningen dependency: `[clip-test "0.2.1"]`
 
 Supported Clojure versions: 1.2, 1.3, 1.4, 1.5
 
-Tested with lein-cljsbuild version: 0.2.8
+Tested with lein-cljsbuild version: 0.2.9
 
 ### Notes:
 
